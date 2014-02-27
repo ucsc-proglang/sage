@@ -1,0 +1,16 @@
+set terminal postscript portrait 8
+set output "hist.ps"
+set size 0.47, 0.15
+set pointsize 0.3
+set title ""
+set xlabel "Evaluation Steps" 
+set ylabel "N (log scale)" 1.5
+set xrange [0:200]
+set logscale y
+set xtics  nomirror  ("0" 0, "50" 50, "100" 100, "150" 150, ">=200" 200)
+set ytics nomirror
+set tics out
+set nokey
+set border 3
+
+plot "hist.dat" with boxes fs solid 0.50

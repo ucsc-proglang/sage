@@ -1,0 +1,5 @@
+#!/bin/sh
+grep HISTO $* | sed -e 's/:E/ E/' | cut -d ' ' -f 1,4- > histall.dat
+../scripts/hist_total.pl < histall.dat > hist.dat
+gnuplot ../scripts/graph.gpl
+

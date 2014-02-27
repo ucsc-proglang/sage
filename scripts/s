@@ -1,0 +1,14 @@
+#!/bin/bash
+SAGE=../sage
+
+args=($@)
+file=${args[$# - 1]}
+
+if [ -f $file ]; then
+    $SAGE $@
+    echo -n "Committing file..."
+    svn commit --non-interactive -m "automatic commit of $file" $file
+    echo "done."
+else
+    echo "$file not found"
+fi

@@ -1,0 +1,40 @@
+#!/bin/tcsh
+# $1: command to run interpreter
+# $2: test file
+echo $*
+
+setenv TIMEOUT 5s
+
+setenv FLAGS '-maxeval 100 -prover  "../Simplify" -phisto -noeval -infer'
+
+setenv FF `echo $2 | sed -e "s/\.sage//g"`
+
+# num
+#####################
+setenv COUNT `ls bad/${FF}.*.sage | wc -l`
+
+
+# num w/ type errors
+#####################
+setenv WT `grep -v  "WELLTYPED" bad/${FF}.*.sage | sort | uniq | wc -l `
+
+# with refinments
+#####################
+echo "" > bad/${FF}.out
+foreach f (`ls bad/${FF}.*.sage`) 
+	echo $f
+        (tcsh -c "limit cputime $TIMEOUT; $1 ${FLAGS} $f") > $f.tmp
+	echo $f ":" `grep "Warning:" $f.tmp | wc -l` > $f.out
+end
+setenv REFINE `grep -v "0" bad/${FF}.*.sage.out | wc -l `
+
+# without refinements
+#####################
+echo "" > bad/${FF}.nr.out
+foreach f (`ls bad/${FF}.*.sage`) 
+	echo $f
+        (tcsh -c "limit cputime $TIMEOUT; $1 -noeval -norefine $f") > $f.tmp2
+	echo $f ":" `grep "Warning:" $f.tmp2 | wc -l` > $f.nr.out
+end
+setenv ML `grep -v "0" bad/${FF}.*.sage.nr.out | wc -l `
+echo "${FF}.sage & $COUNT & $WT & $REFINE & $ML \\\\  % XXX"
