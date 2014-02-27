@@ -7,3 +7,12 @@
 *.cmx
 *.cmxs
 *.cmxa
+
+/src/lexer.ml
+/src/parser.ml
+/src/parser.mli
+/src/parser.output
+/sage
+/platex
+/unittest
+/pdb
