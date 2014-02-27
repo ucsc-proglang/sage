@@ -1,4 +1,3 @@
-
 The Sage Programming Language
 =============================
 
@@ -56,7 +55,31 @@ On Windows, this is better:
 Usage
 -----
 
-To type check and run a program, use `sage <filename>`.
+You can experiment with Sage via its interactive toplevel by running `sage` with no arguments.
+
+```ocaml
+$ ./sage
+creating new database default.db.
+     Welcome to Sage
+
+# let x = 3;;
+Binding for: x
+Type: (Refine Int (fn (x:Int) => (inteq x 3)))
+Evaluation: 3
+
+# let add_one (x:Int) = x + 1;;
+Binding for: add_one
+Type: (x:Int -> (Refine Int (fn (z:Int) => (inteq z (add x 1)))))
+Evaluation: (fn (x:Int) => (add x 1))
+
+# add_one 3;;
+Type: (Refine Int (fn (z:Int) => (inteq z (add 3 1))))
+Evaluation: 4
+```
+
+The fun never ends.
+
+To type check and run a file of sage code, use `sage <filename>`.
 A number of example programs are in the `tests` subdirectory.
 For example, try `sage tests/polylist.f`
 
