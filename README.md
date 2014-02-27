@@ -87,6 +87,54 @@ Running `sage -help` shows the command-line options, many of which are
 are for debugging purposes.
 
 
+Contributors
+------------
+
+ * [Kenn Knowles](https://github.com/kennknowles) ([@kennknowles](https://twitter.com/KennKnowles))
+ * [Cormac Flanagan](http://cs.ucsc.edu/~cormac)
+ * [Stephen Freund](http://dept.cs.williams.edu/~freund/)
+ * [Jessica Gronski](https://www.facebook.com/jgronski)
+ * [Aaron Tomb](http://corp.galois.com/aaron-tomb/)
+
+
+Readings
+--------
+
+Do you like the ideas in Sage? You may enjoy deep theoretical and practical readings about their development.
+
+The most thorough treatment of the theory, and a good place to jump off to related work, is Kenn's dissertation.
+
+ - _[Executable Refinement Types](http://kennknowles.com/research/kknowles-dissertation.pdf)_  
+   Kenneth Knowles. Doctoral dissertation, 2014.
+
+If you prefer smaller bits, the theory has been published in pieces in conferences and journals over the years.
+
+ - [Sage: Unified Hybrid Checking for First-Class Types, General Refinement Types, and Dynamic](http://sage.soe.ucsc.edu/sage-tr.pdf)  
+   Kenneth Knowles, Aaron Tomb, Jessica Gronski, Stephen N. Freund, and Cormac Flanagan.  
+   _Scheme Workshop_ 2006
+ - [Hybrid type checking](http://users.soe.ucsc.edu/~cormac/papers/toplas09.pdf)  
+   Kenneth Knowles and Cormac Flanagan  
+   _Transactions on Programming Languages and Systems_ (TOPLAS) 2010
+   Revised and extended from Cormac Flanagan's work in _Principles of Programming Languages_ (POPL) 2006
+ - [Hybrid Types, Invariants, and Refinements for Imperative Objects](http://www.cs.ucsc.edu/%7Ecormac/papers/fool06.pdf)  
+   Cormac Flanagan, Stephen N. Freund, and Aaron Tomb  
+   _Foundations of Object Oriented Languages_ (FOOL) 2006
+ - [Type Reconstruction for General Refinement Types](http://kennknowles.com/research/knowles-flanagan.esop.07.type.pdf)  
+   Kenneth Knowles and Cormac Flanagan  
+   _European Symposium on Programming_ (ESOP) 2007
+ - [Unifying Hybrid Types and Contracts](http://sage.soe.ucsc.edu/tfp07-gronski-flanagan.pdf)  
+   Jessica Gronski and Cormac Flanagan  
+   Presented at Trends in Functional Programming (TFP) 2007
+ - [Space Efficient Gradual Typing](http://sage.soe.ucsc.edu/tfp07-herman-tomb-flanagan.pdf)  
+   Dave Herman, Aaron Tomb, and Cormac Flanagan  
+   _Trends in Functional Programming_ (TFP) 2007
+ - [Compositional and Decidable Checking for Dependent Contract Types](http://kennknowles.com/research/knowles-flanagan.plpv.09.compositional.pdf)  
+   Kenneth Knowles and Cormac Flanagan  
+   _Programming Languages meets Program Verification_ (PLPV) 2009
+
+(It took a few years to discover the name "Executable Refinement Types" but these are all talking about the same sorts of type systems, where the refinements are closely tied to the ability to run-time behavior to enable Hybrid Type Checking)
+
+
 Other interesting projects
 --------------------------
 
