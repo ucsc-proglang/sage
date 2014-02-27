@@ -1,0 +1,1 @@
+cast Bool Bool true;;

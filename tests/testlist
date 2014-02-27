@@ -1,0 +1,42 @@
+arith.sage         PASS B  Precisely-typed arithmetic operations
+assoc.sage         PASS T  Test of associativity 
+assume.sage        PASS T  Test of the 'assume' construct
+assumefail.sage    FAIL T  Test of the 'assumenot' construct
+bst.sage           PASS B  Precisely-typed binary search tree
+cast.sage          PASS T  Test of the 'cast' primitive
+church_pairs.sage  PASS T  Construction of pairs without using 'datatype'
+commands.sage      PASS T  Test of top-level commands
+datatype1.sage     PASS T  Test of 'datatype' construct
+fail1.sage         FAIL T  Tests that Int->true is not a valid type
+fail2.sage         FAIL T  Tests detection of invalid function parameters
+fail4.sage         FAIL T  Tests application of non-function
+failrefine.sage    FAIL T  Tests failed refinement
+fib_refine.sage    PASS T  Fibonacci generator typed to work on positive numbers
+gctest2.sage       PASS T  Test of environment garbage collection
+gctest3.sage       PASS T  Test of environment garbage collection
+gctest.sage        PASS T  Test of environment garbage collection
+heap.sage          PASS B  Precisely-typed heap data structure
+if.sage            PASS T  Test of the different forms of 'if'
+mergesort.sage     PASS B  Precisely-typed mergesort
+polylist.sage      PASS B  OCaml's list module + more precise types
+polymorphic.sage   PASS T  Test of polymorphic functions
+primitives.sage    PASS T  Each primitive as a command, to look up types
+printf.sage        PASS B  Example of printf where type depends on args
+quicksort.sage     PASS T  Precisely-typed quicksort
+range.sage         PASS T  Tree datatype representing integer ranges
+redblack.sage      PASS T  Simply-typed red-black tree
+refine.sage        PASS T  Simple tests of refinements
+regexp.sage        PASS B  Regular expression types
+stlc.sage          PASS B  STLC type checker and interpreter
+stlc_norefine.sage PASS T  STLC type checker and interpreter w/o refinements
+sugar_as.sage      PASS T  Test of the 'as' construct
+sugar_fn.sage      PASS T  Test of the 'fn' construct
+sugar_if.sage      PASS T  Test of the 'if' construct
+sugar_iff.sage     PASS T  Test of the 'iff' primitive
+sugar_inteq.sage   PASS T  Test of the 'inteq' primitive
+sugar_let.sage     PASS T  Test of the 'let' construct
+sugar_letrec.sage  PASS T  Test of the 'letrec' construct
+sugar_rec.sage     PASS T  Test of the 'rec' construct
+misc_test.sage     PASS T  Miscellaneous simple tests
+tree.sage          PASS T  Hand-encoded tree datatype
+sheard.sage        PASS T  Encoding of GADTs
