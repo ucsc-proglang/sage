@@ -46,8 +46,8 @@ DEPEND += src/lexer.ml src/parser.ml
 
 # Files that need to be generated from other files
 
-OCAMLOPTS = unix.cma str.cma -g -warn-error A -I src
-NOCAMLOPTS = unix.cmxa str.cmxa -p -warn-error A -I src
+OCAMLOPTS = unix.cma str.cma -g -I src
+NOCAMLOPTS = unix.cmxa str.cmxa -p -I src
 
 DB = cow.db
 
