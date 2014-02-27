@@ -1,0 +1,5 @@
+#!/bin/sh
+# $1: command to run interpreter
+# $2: test file
+# $3: test log
+$1 $2 > $3 || true
