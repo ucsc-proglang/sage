@@ -56,6 +56,7 @@ Usage
 -----
 
 You can experiment with Sage via its interactive toplevel by running `sage` with no arguments.
+We have prepared a tutorial at http://sage.soe.ucsc.edu/tutorial.txt
 
 ```ocaml
 $ ./sage
